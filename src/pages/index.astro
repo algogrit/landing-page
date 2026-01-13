@@ -1,5 +1,13 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Expertise from '../components/Expertise.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Navbar from '../components/Navbar';
+import RecentWritings from '../components/RecentWritings';
+import ResumeCTA from '../components/ResumeCTA.astro';
+import Stats from '../components/Stats.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +15,13 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Navbar client:load/>
+	<Hero/>
+	<Stats/>
+	<About/>
+	<Expertise/>
+	<RecentWritings client:load/>
+	<ResumeCTA/>
+	<Contact/>
+	<Footer/>
 </Layout>
